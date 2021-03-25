@@ -12,4 +12,4 @@ project/npm-debug.log
 project/yarn-error.log
 project/config
 project/.env
-
+/public/*
