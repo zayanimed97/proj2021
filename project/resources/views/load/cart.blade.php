@@ -20,7 +20,7 @@
 
 																	<span class="cart-product-info">
 																		<span class="cart-product-qty" id="cqt{{$product['item']['id'].$product['size'].$product['color'].str_replace(str_split(' ,'),'',$product['values'])}}">{{$product['qty']}}</span><span>{{ $product['item']['measure'] }}</span>
-																		x <span id="prct{{$product['item']['id'].$product['size'].$product['color'].str_replace(str_split(' ,'),'',$product['values'])}}">{{ App\Models\Product::convertPrice(auth()->guard('web')->check() && auth()->guard('web')->user()->IsVendor() ? $product['item']['vendor_price'] : $product['item']['price']) }}</span>
+																		x <span id="prct{{$product['item']['id'].$product['size'].$product['color'].str_replace(str_split(' ,'),'',$product['values'])}}">{{ App\Models\Product::convertPrice(auth()->guard('web')->check() && auth()->guard('web')->user()->IsVendor() fdq ? $product['item']['vendor_price'] : $product['item']['price']) }}</span>
 																	</span>
 																</div>
 															</div><!-- End .product-details -->

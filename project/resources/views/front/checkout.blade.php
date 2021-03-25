@@ -258,7 +258,7 @@
 															target="_blank">{{ $product['item']['name'] }}</a></p>
 													<div class="unit-price">
 														<h5 class="label">{{ $langg->lang754 }} : </h5>
-														<p>{{ App\Models\Product::convertPrice($product['item']['price']) }}</p>
+														<p>{{ App\Models\Product::convertPrice(auth()->guard('web')->check() && auth()->user()->IsVendor() ? $product['item']['vendor_price'] : $product['item']['price']) }}</p>
 													</div>
 													@if(!empty($product['size']))
 													<div class="unit-price">
@@ -289,7 +289,7 @@
 													</div>
 													<div class="total-price">
 														<h5 class="label">{{ $langg->lang756 }} : </h5>
-														<p>{{ App\Models\Product::convertPrice($product['price']) }}
+														<p>{{ App\Models\Product::convertPrice(auth()->guard('web')->check() && auth()->user()->IsVendor() ? $product['item']['vendor_price'] : $product['item']['price']) }}
 														</p>
 													</div>
 												</div>
