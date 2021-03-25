@@ -2,6 +2,7 @@ project/node_modules
 project/public/hot
 project/public/storage
 project/storage/*.key
+public
 # project/vendor
 project/.idea
 project/.vagrant
