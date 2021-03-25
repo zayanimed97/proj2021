@@ -203,7 +203,7 @@ class OrderController extends Controller
         {
             return redirect()->route('admin.dashboard')->with('unsuccess',__('Sorry the page does not exist.'));
         }
-        $order = Order::findOrFail($id);
+        $order = Order::with('user')->findOrFail($id);
         $cart = unserialize(bzdecompress(utf8_decode($order->cart)));
         return view('admin.order.details',compact('order','cart'));
     }

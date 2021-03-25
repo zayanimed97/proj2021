@@ -20,6 +20,7 @@ use App\Models\UserNotification;
 use App\Models\VendorOrder;
 use Auth;
 use DB;
+use Illuminate\Contracts\Session\Session as SessionSession;
 use Illuminate\Http\Request;
 use Session;
 use Validator;
@@ -403,6 +404,7 @@ class CheckoutController extends Controller
         $gs = Generalsetting::findOrFail(1);
         $oldCart = Session::get('cart');
         $cart = new Cart($oldCart);
+        // dd($cart);
         foreach($cart->items as $key => $prod)
         {
         if(!empty($prod['item']['license']) && !empty($prod['item']['license_qty']))
@@ -580,14 +582,13 @@ class CheckoutController extends Controller
             Session::forget('coupon_percentage');
 
         //Sending Email To Buyer
-
         if($gs->is_smtp == 1)
         {
         $data = [
             'to' => $request->email,
             'type' => "new_order",
             'cname' => $request->name,
-            'oamount' => "",
+            'oamount' => $order['pay_amount'],
             'aname' => "",
             'aemail' => "",
             'wtitle' => "",
