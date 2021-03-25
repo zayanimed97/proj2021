@@ -229,7 +229,7 @@
                                                     @endif
 
                                                   </td>
-                                            <td>{{$order->currency_sign}}{{round(auth()->guard('web')->check() && auth()->user()->IsVendor() ? $product['item']['price'] * $order->currency_value : $product['item']['price'] * $order->currency_value,2)}}</td>
+                                            <td>{{$order->currency_sign}}{{round(auth()->guard('web')->check() && auth()->user()->IsVendor() ? $product['item']['vendor_price'] * $order->currency_value : $product['item']['price'] * $order->currency_value,2)}}</td>
                                             <td>{{$order->currency_sign}}{{round($product['price'] * $order->currency_value,2)}}</td>
 
                                     </tr>
