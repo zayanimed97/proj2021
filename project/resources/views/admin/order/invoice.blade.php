@@ -137,7 +137,7 @@
                                                 </p>
                                                 @endif
                                                 <p>
-                                                        <strong>{{ __('Price') }} :</strong> {{$order->currency_sign}}{{ round($product['item']['price'] * $order->currency_value , 2) }}
+                                                        <strong>{{ __('Price') }} :</strong> {{$order->currency_sign}}{{ $order->user->IsVendor()?round($product['item']['vendor_price'] * $order->currency_value   , 2):round($product['item']['price'] * $order->currency_value   , 2) }}
                                                 </p>
                                                <p>
                                                     <strong>{{ __('Qty') }} :</strong> {{$product['qty']}} {{ $product['item']['measure'] }}

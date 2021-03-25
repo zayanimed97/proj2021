@@ -209,7 +209,7 @@ class OrderController extends Controller
     }
     public function invoice($id)
     {
-        $order = Order::findOrFail($id);
+        $order = Order::with('user')->findOrFail($id);
         $cart = unserialize(bzdecompress(utf8_decode($order->cart)));
         return view('admin.order.invoice',compact('order','cart'));
     }
