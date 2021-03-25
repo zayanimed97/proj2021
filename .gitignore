@@ -13,3 +13,4 @@ project/yarn-error.log
 project/config
 project/.env
 /public/*
+project/config/database.php
