@@ -2,7 +2,7 @@ project/node_modules
 project/public/hot
 project/public/storage
 project/storage/*.key
-project/# /vendor
+# project/vendor
 project/.idea
 project/.vagrant
 project/Homestead.json
