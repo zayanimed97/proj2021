@@ -550,7 +550,7 @@ class CheckoutController extends Controller
                 $vorder->user_id = $prod['item']['user_id'];
                 $notf[] = $prod['item']['user_id'];
                 $vorder->qty = $prod['qty'];
-                $vorder->price = $prod['price'];
+                $vorder->price = auth()->guard('web')->check() && auth()->user()->IsVendor() ? $prod['vendor_price'] : $prod['price'];
                 $vorder->order_number = $order->order_number;             
                 $vorder->save();
             }
