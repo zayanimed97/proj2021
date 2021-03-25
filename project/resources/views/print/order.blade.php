@@ -1768,7 +1768,7 @@ table.dataTable thead .sorting_desc_disabled::after {
                                                 </p>
                                                 @endif
                                                 <p>
-                                                        Price : {{ App\Models\Currency::where('sign',$order->currency_sign)->first()->name }}{{ round($product['item']['price'] * $order->currency_value , 2) }}
+                                                        Price : {{ App\Models\Currency::where('sign',$order->currency_sign)->first()->name }}{{ $order->user->IsVendor()?round($product['item']['vendor_price'] * $order->currency_value   , 2):round($product['item']['price'] * $order->currency_value   , 2)}}
                                                 </p>
                                                <p>
                                                     Qty : {{$product['qty']}} {{ $product['item']['measure'] }}

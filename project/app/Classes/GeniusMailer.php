@@ -66,7 +66,7 @@ class GeniusMailer
                 $message->from($objDemo->from,$objDemo->title);
                 $message->to($objDemo->to);
                 $message->subject($objDemo->subject);
-                $order = Order::findOrFail($id);
+                $order = Order::with('user')->findOrFail($id);
                 $cart = unserialize(bzdecompress(utf8_decode($order->cart)));
                 $fileName = public_path('assets/temp_files/').str_random(4).time().'.pdf';
                 $pdf = PDF::loadView('print.order', compact('order', 'cart'))->save($fileName);
