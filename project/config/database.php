@@ -44,7 +44,7 @@ return [
             'host' => env('DB_HOST', 'localhost'),
             'port' => env('DB_PORT', '3306'),
             'database' => 'proj2021',
-            'username' => 'root',
+            'username' => 'procre',
             'password' => env('DB_PASSWORD', ''),
             'unix_socket' => env('DB_SOCKET', ''),
             'charset' => 'utf8mb4',

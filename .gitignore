@@ -1,13 +1,14 @@
-/node_modules
-/public/hot
-/public/storage
-/storage/*.key
-# /vendor
-/.idea
-/.vagrant
-Homestead.json
-Homestead.yaml
-npm-debug.log
-yarn-error.log
-/project/config/*.php
-# .env
+project/node_modules
+project/public/hot
+project/public/storage
+project/storage/*.key
+project/# /vendor
+project/.idea
+project/.vagrant
+project/Homestead.json
+project/Homestead.yaml
+project/npm-debug.log
+project/yarn-error.log
+project/config
+project/.env
+
