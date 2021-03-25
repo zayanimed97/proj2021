@@ -280,7 +280,7 @@
                                                     @endif
 
                                                   </td>
-                                            <td>{{$order->currency_sign}}{{round($product['item']['price'] * $order->currency_value,2)}}
+                                            <td>{{$order->currency_sign}}{{$order->user->IsVendor()?round($product['item']['vendor_price'] * $order->currency_value   , 2):round($product['item']['price'] * $order->currency_value   , 2)}}
                                             </td>
                                             <td>{{$order->currency_sign}}{{round($product['price'] * $order->currency_value,2)}}
                                             </td>
