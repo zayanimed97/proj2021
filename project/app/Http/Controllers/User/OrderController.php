@@ -62,7 +62,7 @@ class OrderController extends Controller
     public function orderprint($id)
     {
         $user = Auth::guard('web')->user();
-        $order = Order::findOrfail($id);
+        $order = Order::with('user')->findOrfail($id);
         $cart = unserialize(bzdecompress(utf8_decode($order->cart)));
         return view('user.order.print',compact('user','order','cart'));
     }
