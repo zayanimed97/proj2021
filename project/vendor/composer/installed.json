@@ -305,7 +305,8 @@
             "archive",
             "laravel",
             "zip"
-        ]
+        ],
+        "abandoned": true
     },
     {
         "name": "composer/ca-bundle",
@@ -939,7 +940,8 @@
             "data",
             "faker",
             "fixtures"
-        ]
+        ],
+        "abandoned": true
     },
     {
         "name": "guzzlehttp/guzzle",
@@ -1341,7 +1343,8 @@
                 "name": "Jakub Onderka",
                 "email": "jakub.onderka@gmail.com"
             }
-        ]
+        ],
+        "abandoned": "php-parallel-lint/php-console-color"
     },
     {
         "name": "jakub-onderka/php-console-highlighter",
@@ -1389,7 +1392,8 @@
                 "homepage": "http://www.acci.cz/"
             }
         ],
-        "description": "Highlight PHP code in terminal"
+        "description": "Highlight PHP code in terminal",
+        "abandoned": "php-parallel-lint/php-console-highlighter"
     },
     {
         "name": "kylekatarnls/update-helper",
@@ -2224,7 +2228,8 @@
         "keywords": [
             "cron",
             "schedule"
-        ]
+        ],
+        "abandoned": "dragonmantank/cron-expression"
     },
     {
         "name": "myclabs/deep-copy",
@@ -3104,7 +3109,8 @@
         "homepage": "https://github.com/sebastianbergmann/php-token-stream/",
         "keywords": [
             "tokenizer"
-        ]
+        ],
+        "abandoned": true
     },
     {
         "name": "phpunit/phpunit",
@@ -4510,6 +4516,73 @@
             "paypal",
             "rest",
             "web service"
+        ]
+    },
+    {
+        "name": "statickidz/php-google-translate-free",
+        "version": "1.2.1",
+        "version_normalized": "1.2.1.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/statickidz/php-google-translate-free.git",
+            "reference": "29dc0b0110fcb78ba51fc2d983d638dbdd7fa439"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/statickidz/php-google-translate-free/zipball/29dc0b0110fcb78ba51fc2d983d638dbdd7fa439",
+            "reference": "29dc0b0110fcb78ba51fc2d983d638dbdd7fa439",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.4"
+        },
+        "require-dev": {
+            "phpdocumentor/phpdocumentor": "2.*",
+            "phpunit/phpunit": ">=4.8",
+            "squizlabs/php_codesniffer": "^2.3"
+        },
+        "time": "2021-04-12T14:59:49+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Statickidz\\": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "GPL-3.0+"
+        ],
+        "authors": [
+            {
+                "name": "Adrián Barrio Andrés",
+                "email": "statickidz@gmail.com",
+                "homepage": "https://statickidz.com",
+                "role": "Developer"
+            },
+            {
+                "name": "Paris Niarfe Baltazar Salguero",
+                "email": "sieg.sb@gmail.com",
+                "homepage": "http://www.pbaltazar.com",
+                "role": "Developer"
+            }
+        ],
+        "description": "Google Translate Free library for PHP",
+        "homepage": "https://github.com/statickidz/php-google-translate-free/",
+        "keywords": [
+            "api",
+            "free",
+            "google",
+            "siegsb",
+            "statickidz",
+            "translate",
+            "translator"
+        ],
+        "funding": [
+            {
+                "url": "https://github.com/statickidz",
+                "type": "github"
+            }
         ]
     },
     {
@@ -5944,12 +6017,12 @@
         "version_normalized": "1.5.0.0",
         "source": {
             "type": "git",
-            "url": "https://github.com/webmozart/assert.git",
+            "url": "https://github.com/webmozarts/assert.git",
             "reference": "88e6d84706d09a236046d686bbea96f07b3a34f4"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/webmozart/assert/zipball/88e6d84706d09a236046d686bbea96f07b3a34f4",
+            "url": "https://api.github.com/repos/webmozarts/assert/zipball/88e6d84706d09a236046d686bbea96f07b3a34f4",
             "reference": "88e6d84706d09a236046d686bbea96f07b3a34f4",
             "shasum": ""
         },

@@ -72,6 +72,7 @@ class ComposerStaticInit6107b6dcf25e5fc524a9689f58e77036
             'Symfony\\Component\\CssSelector\\' => 30,
             'Symfony\\Component\\Console\\' => 26,
             'Svg\\' => 4,
+            'Statickidz\\' => 11,
             'Srmklive\\PayPal\\' => 16,
         ),
         'R' => 
@@ -270,6 +271,10 @@ class ComposerStaticInit6107b6dcf25e5fc524a9689f58e77036
         'Svg\\' => 
         array (
             0 => __DIR__ . '/..' . '/phenx/php-svg-lib/src/Svg',
+        ),
+        'Statickidz\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/statickidz/php-google-translate-free/src',
         ),
         'Srmklive\\PayPal\\' => 
         array (
@@ -4045,6 +4050,7 @@ class ComposerStaticInit6107b6dcf25e5fc524a9689f58e77036
         'Srmklive\\PayPal\\Traits\\PayPalRequest' => __DIR__ . '/..' . '/srmklive/paypal/src/Traits/PayPalRequest.php',
         'Srmklive\\PayPal\\Traits\\PayPalTransactions' => __DIR__ . '/..' . '/srmklive/paypal/src/Traits/PayPalTransactions.php',
         'Srmklive\\PayPal\\Traits\\RecurringProfiles' => __DIR__ . '/..' . '/srmklive/paypal/src/Traits/RecurringProfiles.php',
+        'Statickidz\\GoogleTranslate' => __DIR__ . '/..' . '/statickidz/php-google-translate-free/src/GoogleTranslate.php',
         'Svg\\DefaultStyle' => __DIR__ . '/..' . '/phenx/php-svg-lib/src/Svg/DefaultStyle.php',
         'Svg\\Document' => __DIR__ . '/..' . '/phenx/php-svg-lib/src/Svg/Document.php',
         'Svg\\Gradient\\Stop' => __DIR__ . '/..' . '/phenx/php-svg-lib/src/Svg/Gradient/Stop.php',

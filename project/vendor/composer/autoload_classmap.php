@@ -3551,6 +3551,7 @@ return array(
     'Srmklive\\PayPal\\Traits\\PayPalRequest' => $vendorDir . '/srmklive/paypal/src/Traits/PayPalRequest.php',
     'Srmklive\\PayPal\\Traits\\PayPalTransactions' => $vendorDir . '/srmklive/paypal/src/Traits/PayPalTransactions.php',
     'Srmklive\\PayPal\\Traits\\RecurringProfiles' => $vendorDir . '/srmklive/paypal/src/Traits/RecurringProfiles.php',
+    'Statickidz\\GoogleTranslate' => $vendorDir . '/statickidz/php-google-translate-free/src/GoogleTranslate.php',
     'Svg\\DefaultStyle' => $vendorDir . '/phenx/php-svg-lib/src/Svg/DefaultStyle.php',
     'Svg\\Document' => $vendorDir . '/phenx/php-svg-lib/src/Svg/Document.php',
     'Svg\\Gradient\\Stop' => $vendorDir . '/phenx/php-svg-lib/src/Svg/Gradient/Stop.php',
